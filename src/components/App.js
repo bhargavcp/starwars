@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from "react-router-dom";
-import Home from "./Home";
-import Subpage from "./Subpage";
+import Home from "./pages/Home";
+import Subpage from "./pages/Subpage";
 import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {

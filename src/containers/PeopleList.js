@@ -3,7 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import PersonPage from './PersonPage'
 import { BrowserRouter } from 'react-router-dom';
-import {getIndividualCharacter} from './actions/getIndividualCharacter';
+import {getIndividualCharacter} from '../actions/getIndividualCharacter';
 
 class PeopleList extends Component {
 

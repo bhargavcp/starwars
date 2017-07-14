@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
-import {getCharacters} from './actions/getCharacters';
-import PeopleList from './PeopleList'
+import {getCharacters} from '../../actions/getCharacters';
+import PeopleList from '../../containers/PeopleList'
 
 class Home extends Component {
 
@@ -22,9 +22,6 @@ class Home extends Component {
     }
 }
 
-function mapStateToProps(state){
-    return {people: state.people};
-}
 
 function mapDispatchToProps(dispatch){
     return {
@@ -32,4 +29,4 @@ function mapDispatchToProps(dispatch){
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(null, mapDispatchToProps)(Home);
