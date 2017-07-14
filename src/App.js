@@ -3,6 +3,7 @@ import { Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Subpage from "./Subpage";
 import { BrowserRouter } from "react-router-dom";
+
 class App extends Component {
 
     render() {
@@ -14,9 +15,7 @@ class App extends Component {
                             <Link to="/">Home</Link>
                             <Link to="/subpage">Subpage</Link>
                         </div>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <br/> <br/> <br/>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/subpage" component={Subpage} />
                     </div>
