@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
-import {getCharacters} from '../../actions/getCharacters';
-import PeopleList from '../../containers/PeopleList'
+import {getCharacters} from '../actions/getCharacters';
+import PeopleList from '../containers/PeopleList'
 
 class Home extends Component {
 

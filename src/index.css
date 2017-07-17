@@ -19,6 +19,10 @@ body {
     flex-flow: column;
 }
 
+#NoStarship {
+    text-align: center;
+}
+
 .TopBar {
     position: fixed;
     top: 0;
