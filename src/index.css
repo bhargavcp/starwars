@@ -6,7 +6,7 @@ body,
 }
 
 body {
-    background-color: #3e94ec;
+    background-color: #0d2134;
     font-family: "Roboto", helvetica, arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -3769,9 +3769,6 @@ input::-ms-clear {
     padding: 10px
 }
 
-
-
-
 .Checkout.is-mobile .SegmentedControl-Item {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -3843,8 +3840,6 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    /*border: 10px solid #301c13;*/
-    /*color: rgba(3, 5, 16, 0.75);*/
     font-family: Arial,Verdana,sans-serif;
 }
 
@@ -3852,17 +3847,3 @@ th, td {
     text-align: left;
     padding: 10px;
 }
-
-/*tr:nth-child(1) {*/
-    /*background-color: #f5f50b;*/
-    /*color: #000000;*/
-/*}*/
-
-/*tr:nth-child(n+2){*/
-    /*background-color: #f1ffb3;*/
-    /*color: #0c0201;*/
-/*}*/
-
-/*tr:nth-child(2n){*/
-    /*background-color: #e3ff56*/
-/*}*/
