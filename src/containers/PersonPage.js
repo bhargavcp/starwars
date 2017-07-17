@@ -6,6 +6,8 @@ class PersonPage extends Component {
     render(){
         return(
             <div>
+
+
                 <table>
                     <tr key={"PersonTableHeader"}>
                         <th>Name</th>
@@ -26,7 +28,9 @@ class PersonPage extends Component {
                         <td>{this.props.person.gender}</td>
                     </tr>
                 </table>
+              <table>
                 {this.renderStarshipsIfAny(this.props.starShips)}
+              </table>
             </div>
         );
     }
@@ -40,10 +44,10 @@ class PersonPage extends Component {
           for(let i = 0; i < starShips.length; i++){
             if (i < 1){
                 jsxArray.push(
-                    <table key={"StarshipTable"}>
-                        {this.renderTableHeader()}
-                        {this.renderStarshipDetails(starShips[i])}
-                    </table>
+                  <tbody>
+                    {this.renderTableHeader()}
+                    {this.renderStarshipDetails(starShips[i])}
+                  </tbody>
                 )
             }
             else {

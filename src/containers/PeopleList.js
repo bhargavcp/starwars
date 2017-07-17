@@ -27,7 +27,7 @@ class PeopleList extends Component {
 
     render(){
         if(this.props.people.length < 1){
-            return (<div>Please click on the button to view the list.</div>);
+            return (<div>Loading...</div>);
         }
         return(
         <BrowserRouter>
@@ -63,3 +63,4 @@ function mapDispatchToProps(dispatch){
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(PeopleList);
+
