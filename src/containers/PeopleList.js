@@ -32,7 +32,7 @@ class PeopleList extends Component {
         return(
         <BrowserRouter>
             <div>
-                <table>
+                <table className="table table-bordered">
                     <tbody>
                     <tr>
                         <th>Name</th>

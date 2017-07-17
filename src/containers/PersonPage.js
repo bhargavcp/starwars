@@ -6,9 +6,7 @@ class PersonPage extends Component {
     render(){
         return(
             <div>
-
-
-                <table>
+                <table className="table table-bordered">
                     <tbody>
                         <tr key={"PersonTableHeader"}>
                             <th>Name</th>
@@ -30,8 +28,10 @@ class PersonPage extends Component {
                         </tr>
                     </tbody>
                 </table>
-                <table>
-                {this.renderStarshipsIfAny(this.props.starShips)}
+                <table className="table table-bordered">
+                    <tbody>
+                        {this.renderStarshipsIfAny(this.props.starShips)}
+                    </tbody>
                 </table>
             </div>
         );
@@ -41,7 +41,7 @@ class PersonPage extends Component {
         console.log("Received state in personPage:", starShips);
         if(starShips.length > 0) {
             if(Object.keys(starShips[0]).includes("starShip") && starShips[0].starShip == null){
-                return <tbody><tr><td id="NoStarship">No Starship(s) associated</td></tr></tbody>;
+                return <tr><td id="NoStarship">No Starship(s) associated</td></tr>;
             }
             else
             {
@@ -49,10 +49,8 @@ class PersonPage extends Component {
                 for (let i = 0; i < starShips.length; i++) {
                     if (i < 1) {
                         jsxArray.push(
-                            <tbody key="StarshipsTable">
-                                {this.renderTableHeader()}
-                                {this.renderStarshipDetails(starShips[i])}
-                            </tbody>
+                            this.renderTableHeader(),
+                            this.renderStarshipDetails(starShips[i])
                         )
                     }
                     else {

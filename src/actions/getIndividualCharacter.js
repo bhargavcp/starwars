@@ -11,10 +11,10 @@ export function getIndividualCharacter(personUrl) {
                 type: FETCHED_INDIVIDUAL,
                 payload: response.data
             });
-            if (response.data.starships.length > 0){
+
+            if (response.data.starships.length > 0) {
                 response.data.starships.map( (url) => {
                     axios.get(url).then( (response) => {
-                        console.log("Sending this from action: ", response.data);
                         response.data.personUrl = personUrl;
                         dispatch({
                             type: FETCHED_STARSHIPS,
@@ -24,7 +24,6 @@ export function getIndividualCharacter(personUrl) {
                 })
             }
             else {
-                console.log("Response: ", response);
                 dispatch({
                     type: NO_STARSHIPS,
                     payload: {'starShip' : null}
