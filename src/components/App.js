@@ -4,7 +4,6 @@ import Home from "./Home";
 import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {
-
     render() {
         return (
             <div className="App">
@@ -14,11 +13,7 @@ class App extends Component {
 
                     </div>
                 </BrowserRouter>
-
-
-
             </div>
-
         );
     }
 }
