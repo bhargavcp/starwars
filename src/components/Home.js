@@ -4,11 +4,9 @@ import {getCharacters} from '../actions/getCharacters';
 import PeopleList from '../containers/PeopleList'
 
 class Home extends Component {
-
-
-componentWillMount(){
-  this.props.fetchPeople();
-}
+    componentWillMount(){
+      this.props.fetchPeople();
+    }
 
     render() {
         return (

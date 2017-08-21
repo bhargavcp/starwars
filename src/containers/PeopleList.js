@@ -24,7 +24,6 @@ class PeopleList extends Component {
             );
     };
 
-
     render(){
         if(this.props.people.length < 1){
             return (<div>Loading...</div>);
@@ -50,7 +49,6 @@ class PeopleList extends Component {
     }
 }
 
-
 function mapStateToProps(state){
     return {people: state.people};
 }
@@ -60,7 +58,6 @@ function mapDispatchToProps(dispatch){
         getIndividualCharacter: (url) => dispatch(getIndividualCharacter(url))
     };
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(PeopleList);
 
